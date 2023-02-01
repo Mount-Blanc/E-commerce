@@ -7,9 +7,15 @@
   --text-on-tertiary: white;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+
 button {
   background-color:#FF8C00;
-  border:none;
   border-radius: 3px;
 }
 h2 {
@@ -19,3 +25,4 @@ h2 {
 a {
   color: var(--secondary-color);
 }
+

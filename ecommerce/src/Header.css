@@ -1,0 +1,22 @@
+:root {
+    --primary-color: #FFA07A;
+    --secondary-color: #FFE4B5;
+    --tertiary-color: #FF8C00;
+    --text-on-primary: black;
+    --text-on-secondary: black;
+    --text-on-tertiary: white;
+  }
+header {
+    background-color: #FF8C00;
+}  
+button {
+  background-color: #FFA07A;
+  border: white;
+}
+li {
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
