@@ -17,6 +17,7 @@
 button {
   background-color:#FF8C00;
   border-radius: 3px;
+  border-color: 1px solid white
 }
 h2 {
   color: var(--tertiary-color);

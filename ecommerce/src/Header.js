@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css'
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 const Header = () => {
   return (
     <header>
@@ -17,7 +18,7 @@ const Header = () => {
         <button type="submit">Go</button>
       </form>
       <div className="shopping-cart">
-        <i className="fas fa-shopping-cart"></i>
+        <ShoppingCartIcon/>
       </div>
     </header>
   );
