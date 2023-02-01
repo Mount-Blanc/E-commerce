@@ -1,8 +1,8 @@
 import React from "react";
-
+import './Footer.css'
 const Footer = () => {
   return (
-    <footer style={{ backgroundColor: "gray", color: "white", padding: "20px" }}>
+    <footer>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <p>Contact Information: info@example.com</p>
         <div style={{ display: "flex" }}>

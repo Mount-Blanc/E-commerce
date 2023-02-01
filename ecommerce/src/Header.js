@@ -1,9 +1,8 @@
 import React from 'react';
-
 const Header = () => {
   return (
     <header>
-      <img src="logo.png" alt="Website Logo" />
+      <h1>Juice</h1>
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
