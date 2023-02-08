@@ -1,9 +1,15 @@
 
 import { useEffect,useState } from "react"
 import Card from "./Card";
+import CartContext from './context/cartcontext'
+import { useContext } from "react";
+
+
 
 function ProductData () {
 const [Data, setData] = useState([])
+const { cart, addToCart, removeFromCart } = useContext(CartContext);
+
 
 useEffect(() => {
     fetchData()
@@ -25,7 +31,7 @@ useEffect(() => {
         ${item.price}
         <img src={item.image}/>
         {item.description}
-        <button className="button">Add to Cart</button>
+        <button onClick ={() => addToCart(item) }className="button">Add to Cart</button>
         </Card>
         
       ))}
