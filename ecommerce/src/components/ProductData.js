@@ -22,7 +22,9 @@ useEffect(() => {
         {Data.map(item => (
         <Card key={item.id}>
         {item.title}
+        ${item.price}
         <img src={item.image}/>
+        {item.description}
         </Card>
         
       ))}
