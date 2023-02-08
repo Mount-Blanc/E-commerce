@@ -5,23 +5,24 @@ import CartContext from "./cartcontext";
 const cartReducer = (state, action) => {
     switch (action.type) {
       case "ADD":
-        return [...state,{title:action.item.title}]
+        return [...state,{title:action.item.title,
+        id:action.item.id}]
       case "REMOVE":
-        return state.filter((i) => i !== action.item);
+        return state.filter(item => item.id !== action.item.id)
       default:
         return state;
     }
   };
   
   function CartProvider(props) {
-    const [cart, dispatch] = useReducer(cartReducer, [{id:"",title:"",image:"",description:""}]);
+    const [cart, dispatch] = useReducer(cartReducer, [{id:0,title:"",image:"",description:""}]);
   
     const addToCart = (item) => {
       dispatch({ type: "ADD", item });
     };
   
-    const removeFromCart = (id) => {
-      dispatch({ type: "REMOVE", id });
+    const removeFromCart = (item) => {
+      dispatch({ type: "REMOVE", item });
     };
   
     return (

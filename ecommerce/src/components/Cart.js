@@ -17,9 +17,10 @@ function Cart() {
           <h2>Your Cart</h2>
           <ul>
             {cart.map((item) => (
-              <li key={item}>
-                {item.title}{" "}
-                <button onClick={() => removeFromCart(item.id)}>Remove</button>
+              <li key={item.id}>
+                <img src={item.image}/>
+                {item.title}
+                <button onClick={() => removeFromCart(item)}>Remove</button>
               </li>
             ))}
           </ul>
