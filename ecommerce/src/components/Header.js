@@ -1,6 +1,8 @@
 import React from 'react';
 import './Header.css'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import Cart from './Cart';
+
 const Header = () => {
   return (
     <header>
@@ -18,6 +20,7 @@ const Header = () => {
         <button type="submit">Go</button>
       </form>
       <div className="shopping-cart">
+        <Cart/>
         <ShoppingCartIcon/>
       </div>
     </header>
