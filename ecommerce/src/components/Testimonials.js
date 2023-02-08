@@ -1,4 +1,5 @@
 import React from "react";
+import TestimonialCard from "./TestimonialCard";
 
 const Testimonials = () => {
   const testimonials = [
@@ -27,11 +28,11 @@ const Testimonials = () => {
     <section>
       <h2>Customer Testimonials</h2>
       {testimonials.map(({ name, text, rating }, index) => (
-        <div key={index} style={{ marginBottom: "30px" }}>
+        <TestimonialCard key={index} style={{ marginBottom: "30px" }}>
           <h3>{name}</h3>
           <p>{text}</p>
           <p>Rating: {rating}/5</p>
-        </div>
+        </TestimonialCard>
       ))}
     </section>
   );

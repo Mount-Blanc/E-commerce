@@ -1,0 +1,28 @@
+.cart {
+    position: fixed;
+     top: 50%;
+     left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      border-radius: 10px;
+      padding:1rem;
+      border-width: 2px;
+    border-style: solid;
+    border-color: #FF8C00;
+    }
+.button {
+    color: white;
+    background-color: #FF8C00;
+    border-radius: 10px;
+    padding: 5px 10px;
+    
+  }
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .price-button {
+    display: flex;
+    flex-direction: column;
+  }

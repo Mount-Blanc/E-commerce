@@ -1,7 +1,7 @@
 import { useContext,useState } from "react";
 import CartContext from './context/cartcontext'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-
+import './Cart.css'
 
 
 function Cart() {
@@ -13,18 +13,22 @@ function Cart() {
       <button onClick={() => setIsOpen(true)}> Cart <ShoppingCartIcon/>
 </button>
       {isOpen && (
-        <div style={{ position: "fixed", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }}>
+        <div className="cart">
           <h2>Your Cart</h2>
           <ul>
             {cart.map((item) => (
               <li key={item.id}>
+                <div className="cart-item">
                 <img src={item.image}/>
                 {item.title}
-                <button onClick={() => removeFromCart(item)}>Remove</button>
+                <div className="price-button">
+               ${item.price}
+                <button className="button" onClick={() => removeFromCart(item)}>Remove</button>
+              </div></div>
               </li>
             ))}
           </ul>
-          <button onClick={() => setIsOpen(false)}>Close</button>
+          <button className='button' onClick={() => setIsOpen(false)}>Close</button>
         </div>
       )}
     </>
