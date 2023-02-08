@@ -15,11 +15,7 @@ const Header = () => {
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
-      <form>
-        <input type="text" placeholder="Search products" />
-        <button type="submit">Go</button>
-      </form>
-      <div className="shopping-cart">
+        <div className="shopping-cart">
         <Cart/>
         <ShoppingCartIcon/>
       </div>
