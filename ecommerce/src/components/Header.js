@@ -1,6 +1,5 @@
 import React from 'react';
 import './Header.css'
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Cart from './Cart';
 
 const Header = () => {
@@ -17,7 +16,6 @@ const Header = () => {
       </nav>
         <div className="shopping-cart">
         <Cart/>
-        <ShoppingCartIcon/>
       </div>
     </header>
   );

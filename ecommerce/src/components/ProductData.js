@@ -25,7 +25,7 @@ useEffect(() => {
         ${item.price}
         <img src={item.image}/>
         {item.description}
-        <button>Add to Cart</button>
+        <button className="button">Add to Cart</button>
         </Card>
         
       ))}

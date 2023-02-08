@@ -1,5 +1,8 @@
 import { useContext,useState } from "react";
 import CartContext from './context/cartcontext'
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+
+
 
 function Cart() {
   const { cart, addToCart, removeFromCart } = useContext(CartContext);
@@ -7,7 +10,8 @@ function Cart() {
 
   return (
     <>
-      <button onClick={() => setIsOpen(true)}>Show Cart</button>
+      <button onClick={() => setIsOpen(true)}>Show Cart <ShoppingCartIcon/>
+</button>
       {isOpen && (
         <div style={{ position: "fixed", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }}>
           <h2>Your Cart</h2>
