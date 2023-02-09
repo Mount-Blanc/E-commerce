@@ -9,14 +9,19 @@
 header {
     background-color: #FF8C00;
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
+    flex-direction:row ;
     position: fixed;
     right: 0;
     left: 0;
+    padding-inline: 1rem;
 }  
 
 .links {
   display: flex;
+}
+.logo {
+  padding-top: 1rem;
 }
 
 li {
@@ -26,4 +31,8 @@ li {
 
 a{
   text-decoration: none;
+}
+
+.shopping-cart {
+  padding-top: 1rem;
 }

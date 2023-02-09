@@ -4,8 +4,8 @@ import Cart from './Cart';
 
 const Header = () => {
   return (
-    <header >
-      <h1>Juice</h1>
+    <header  >
+      <h1 className='logo'>Juice</h1>
       <nav>
         <ul className='links'>
           <li><a href="#">Home</a></li>
