@@ -4,10 +4,10 @@ import Cart from './Cart';
 
 const Header = () => {
   return (
-    <header>
+    <header >
       <h1>Juice</h1>
       <nav>
-        <ul>
+        <ul className='links'>
           <li><a href="#">Home</a></li>
           <li><a href="#">Products</a></li>
           <li><a href="#">About</a></li>
@@ -17,7 +17,7 @@ const Header = () => {
         <div className="shopping-cart">
         <Cart/>
       </div>
-    </header>
+      </header>
   );
 };
 

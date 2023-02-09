@@ -7,11 +7,21 @@
     --text-on-tertiary: white;
   }
 header {
-    background-color: #FF8C00    ;
+    background-color: #FF8C00;
+  display: flex;
+  justify-content: space-between;
+    position: fixed;
+    right: 0;
+    left: 0;
 }  
+
+.links {
+  display: flex;
+}
 
 li {
   list-style: none;
+  padding: 2rem;
 }
 
 a{

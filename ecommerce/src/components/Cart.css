@@ -1,3 +1,4 @@
+
 .cart {
     position: fixed;
      top: 50%;
@@ -9,6 +10,9 @@
       border-width: 2px;
     border-style: solid;
     border-color: #FF8C00;
+    height: 300px;
+  overflow-y: scroll;
+   
     }
 .button {
     color: white;
@@ -18,9 +22,9 @@
     
   }
   .cart-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+display: flex;
+justify-content: space-between;
+border-bottom: 2px solid #FF8C00;
   }
   .price-button {
     display: flex;

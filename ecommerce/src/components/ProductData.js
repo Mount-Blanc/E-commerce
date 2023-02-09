@@ -22,11 +22,9 @@ useEffect(() => {
   };
 
 
-
-
     return(<div>
-        {Data.map(item => (
-        <Card key={item.id}>
+        {Data.map((item) => (
+        <Card key={Math.random()}>
         {item.title}
         ${item.price}
         <img src={item.image}/>
