@@ -2,6 +2,7 @@ import { useContext,useState } from "react";
 import CartContext from './context/cartcontext'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import './Cart.css'
+import CartBadge from "./CartBadge";
 
 
 function Cart() {
@@ -10,7 +11,7 @@ function Cart() {
 
   return (
     <>
-      <button onClick={() => setIsOpen(true)}> Cart <ShoppingCartIcon/>
+      <button onClick={() => setIsOpen(true)}> Cart <ShoppingCartIcon/> <CartBadge/>
 </button>
       {isOpen && (
         <div className="cart">
