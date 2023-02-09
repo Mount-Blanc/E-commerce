@@ -12,7 +12,7 @@
     border-color: #FF8C00;
     height: 300px;
   overflow-y: scroll;
-   
+  min-width: 300px;   
     }
 .button {
     color: white;
@@ -20,6 +20,10 @@
     border-radius: 10px;
     padding: 5px 10px;
     
+  }
+  .your-cart {
+    border-bottom: 2px solid #FF8C00;
+
   }
   .cart-item {
 display: flex;
