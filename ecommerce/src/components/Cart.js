@@ -9,7 +9,7 @@ function Cart() {
   const {cart, removeFromCart} = useContext(CartContext);
   const [isOpen, setIsOpen] = useState(false);
 
-
+console.log(cart.id)
 
   return (
     <>
@@ -20,17 +20,18 @@ function Cart() {
           <h2 className="your-cart">Your Cart</h2>
           <ul>
             {cart.length === 0 && <p>Cart is empty</p>}
-            {cart.map((item) => (
+            { cart.id !== null && cart.map((item) => (
               <li key={item.id}>
                 <div className="cart-item">
-                <img src={item.image}/>
+                <img src={item.image}/> 
                 {item.title}
                 <div className="price-button">
                ${item.price}
                 <button className="button" onClick={() => removeFromCart(item)}>Remove</button>
-              </div></div>
+                </div>
+                </div>
               </li>
-            ))}
+            ))} 
           <button className='button' onClick={() => setIsOpen(false)}>Close</button>
                 </ul>
         </div>)}
