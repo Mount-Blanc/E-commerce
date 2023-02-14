@@ -1,6 +1,9 @@
 {
   "name": "e-commerce",
   "version": "1.0.0",
+  "engines": {
+    "node": "v18.12.1"
+  },
   "description": "A fictional e-commerce website",
   "main": "index.js",
   "dependencies": {
@@ -789,8 +792,9 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"cd ecommerce && npm install",
-    "build":"cd ecommerce && npm run build"
+    "start": "cd ecommerce/server && npm install && node server.js",
+    "build": "cd ecommerce && npm run build",
+    "install": "cd ecommerce && npm install"
   },
   "repository": {
     "type": "git",
