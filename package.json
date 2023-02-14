@@ -1,0 +1,21 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "description": "A fictional e-commerce website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd ecommerce && npm install",
+    "build": "cd ecommerce && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mount-Blanc/E-commerce.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mount-Blanc/E-commerce/issues"
+  },
+  "homepage": "https://github.com/Mount-Blanc/E-commerce#readme"
+}
