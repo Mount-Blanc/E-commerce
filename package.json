@@ -1,6 +1,9 @@
 {
   "name": "e-commerce",
   "version": "1.0.0",
+  "engines": {
+    "node": "v18.12.1"
+  },
   "description": "A fictional e-commerce website",
   "main": "index.js",
   "scripts": {
