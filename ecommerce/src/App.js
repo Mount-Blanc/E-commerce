@@ -8,10 +8,13 @@ function App() {
   return (
     <CartProvider>
       <Header/>
+      <div className='sectionContainer'>
       <ProductData/>
       <Testimonials/>
-      <Footer/>
+      <Footer/> 
+      </div>
     </CartProvider>
+   
   );
 }
 

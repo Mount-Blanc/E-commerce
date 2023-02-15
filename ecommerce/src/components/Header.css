@@ -1,20 +1,21 @@
 :root {
-    --primary-color: #FFA07A;
-    --secondary-color: #FFE4B5;
-    --tertiary-color: #FF8C00;
-    --text-on-primary: black;
-    --text-on-secondary: black;
-    --text-on-tertiary: white;
-  }
+  --primary-color: #ffa07a;
+  --secondary-color: #ffe4b5;
+  --tertiary-color: #ff8c00;
+  --text-on-primary: black;
+  --text-on-secondary: black;
+  --text-on-tertiary: white;
+}
 header {
-    background-color: #FF8C00;
+  background-color: #ff8c00;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   position: fixed;
   right: 0;
-    left: 0;
-    padding-inline: 1rem;
-}  
+  left: 0;
+  top:0;
+  padding-inline: 1rem;
+}
 
 .links {
   display: flex;
@@ -28,7 +29,7 @@ li {
   padding: 2rem;
 }
 
-a{
+a {
   text-decoration: none;
 }
 

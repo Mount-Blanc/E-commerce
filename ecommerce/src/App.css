@@ -29,3 +29,6 @@ a {
   color: var(--secondary-color);
 }
 
+.sectionContainer {
+  margin-top: 7rem;
+}

@@ -18,7 +18,7 @@ function ProductData() {
   };
 
   return (
-    <div>
+    <div className="dataContainer">
       {Data.map((item) => (
         <Card key={Math.random()}>
           {item.title}${item.price}
